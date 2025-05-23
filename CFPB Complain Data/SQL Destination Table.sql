@@ -1,0 +1,20 @@
+CREATE TABLE dbo.CFPB_Complaints (
+    ComplaintID INT PRIMARY KEY,
+    DateReceived DATETIME,
+    Product NVARCHAR(255),
+    SubProduct NVARCHAR(255),
+    Issue NVARCHAR(255),
+    SubIssue NVARCHAR(255),
+    ConsumerComplaintNarrative NVARCHAR(MAX),
+    CompanyPublicResponse NVARCHAR(MAX),
+    Company NVARCHAR(255),
+    State CHAR(2),
+    ZipCode VARCHAR(10),
+    Tags NVARCHAR(255),
+    ConsumerConsentProvided NVARCHAR(255),
+    SubmittedVia NVARCHAR(100),
+    DateSentToCompany DATETIME,
+    CompanyResponseToConsumer NVARCHAR(255),
+    TimelyResponse VARCHAR(3),
+    ConsumerDisputed VARCHAR(5)
+);
